@@ -1,10 +1,10 @@
 ﻿<?xml encoding="UTF-8"?>
 
-<!ELEMENT booklist (book)>
+<!ELEMENT booklist (book+)>
 <!ATTLIST booklist
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT book (title,authors,links,description,categories)>
+<!ELEMENT book (title,authors,links,description*,categories)>
 <!ATTLIST book
   xmlns CDATA #FIXED ''>
 
@@ -12,11 +12,11 @@
 <!ATTLIST title
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT authors (author)>
+<!ELEMENT authors (author+)>
 <!ATTLIST authors
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT links (link)>
+<!ELEMENT links (link+)>
 <!ATTLIST links
   xmlns CDATA #FIXED ''>
 
@@ -24,7 +24,7 @@
 <!ATTLIST description
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT categories (primary,category)>
+<!ELEMENT categories (primary,category*)>
 <!ATTLIST categories
   xmlns CDATA #FIXED ''>
 
