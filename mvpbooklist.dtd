@@ -1,0 +1,45 @@
+﻿<?xml encoding="UTF-8"?>
+
+<!ELEMENT booklist (book)>
+<!ATTLIST booklist
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book (title,authors,links,description,categories)>
+<!ATTLIST book
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT authors (author)>
+<!ATTLIST authors
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT links (link)>
+<!ATTLIST links
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT categories (primary,category)>
+<!ATTLIST categories
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT primary (#PCDATA)>
+<!ATTLIST primary
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category
+  xmlns CDATA #FIXED ''>
